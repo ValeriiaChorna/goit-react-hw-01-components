@@ -1,0 +1,26 @@
+@value font-stack from '../variables.module.css';
+
+.transactionHistory {
+  font-family: font-stack;
+  width: 500px;
+  text-align: center;
+  font-size: 8px;
+  color: grey;
+}
+
+.transactionHistory > thead {
+  background-color: lightskyblue;
+  color: #fff;
+}
+
+.blue {
+  background-color: aliceblue;
+}
+
+.white {
+  background-color: white;
+}
+
+tr {
+  height: 25px;
+}

@@ -1,0 +1,44 @@
+@value font-stack from '../variables.module.css';
+
+.friendList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: font-stack;
+  width: 180px;
+}
+
+.item {
+    box-shadow: 0 0 10px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.status{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.red{
+    composes: status;
+    background-color: red;
+}
+
+.green{
+    composes: status;
+    background-color: green;
+}
+
+.avatar{
+    margin: 5px 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10%;
+}

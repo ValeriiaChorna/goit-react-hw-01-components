@@ -1,0 +1,47 @@
+@value font-stack from '../variables.module.css';
+@value main-color from '../variables.module.css';
+
+.profile {
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid main-color;
+  width: 200px;
+  height: 260px;
+  font-family: font-stack;
+}
+
+.description {
+  text-align: center;
+}
+.avatar {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.stats {
+  padding: 0;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.statsItem {
+  width: 33, 33%;
+  list-style: none;
+  display: block;
+}
+
+.quantity,
+.label {
+  display: block;
+  text-align: center;
+}
+
+.label,
+.tag,
+.location {
+  color: main-color;
+}
