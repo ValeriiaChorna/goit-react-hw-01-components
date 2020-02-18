@@ -9,7 +9,7 @@ function Statistics({ title, stats }) {
       {title && <h2 className={styles.title}>{title.toUpperCase()}</h2>}
 
       <ul className={styles.statList}>
-        <StatisticsItems stats={stats} />
+        {stats.map(({ id, label, percentage }) => <StatisticsItems key={id} id={id} label={label} percentage={percentage} />)}
       </ul>
     </section>
   );
